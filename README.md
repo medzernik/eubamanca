@@ -1,2 +1,2 @@
 # eubamanca
-EUBA - PROGRAMOVANIE
+Programy vlastneho vytvoru pre ucely skoly (DU, projekty) - EUBA. Licencia: MIT License.
