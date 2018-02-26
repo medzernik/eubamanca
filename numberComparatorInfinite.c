@@ -20,8 +20,8 @@ int main(int argc, char* argv[]) {
             a--;
         }
 
-
-
     printf("The maximum number is %d\nThe minimum number is %d", max, min);
     return 0;
+    
+    //Copyright David Marek Manca, MIT License.
 }
