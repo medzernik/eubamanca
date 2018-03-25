@@ -48,7 +48,4 @@ int main() {
     printf("[OUTPUT]Priemer odchyliek cisiel v odchylkovom poli je: %.5f", priemer_odchyliek);
 
     return (0);
-
-
 }
-
