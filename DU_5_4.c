@@ -8,10 +8,10 @@ int main(int argc, char* argv[]) {
     printf("Zadajte pocet cisel na spracovanie:\n");
     do{
         scanf("%d", &n);
-        if(n<0 || n>MAX)
-            printf("Musite zadat pouzitelnu velkost pola (0-100):\n");
+        if(n<1 || n>MAX)
+            printf("Musite zadat pouzitelnu velkost pola (1-100):\n");
     }
-    while(n<0 || n>MAX);
+    while(n<1 || n>MAX);
 
     int cisla[n];
 
@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
         printf("Zadajte %d cislo\n->", overovac);
         scanf("%d", &cisla[i]);
 
-        if(cisla[i]>=0) {
+        if(cisla[i]>0) {
             printf("OK\n------\n");
             overovac++;
         } else {
