@@ -4,12 +4,13 @@ int main() {
     int n = -1, i = 0, j = 0, suma = 0, overovac=1;
     double priemer_cislo = 0, priemer_odchyliek, suma_odchyliek = 0, medzichecker = 0;
 
+    printf("Zadajte pocet cisel na spracovanie:\n");
     do{
         scanf("%d", &n);
-        if(n<0)
-            printf("Zadajte pouzitelnu velkost pola\n");
+        if(n<0 || n>100)
+            printf("Musite zadat pouzitelnu velkost pola (0-100):\n");
     }
-    while(n<0);
+    while(n<0 || n>100);
 
     int cisla[n];
 
