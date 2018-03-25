@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define MAX 100
 
 int main() {
     int n = -1, i = 0, j = 0, suma = 0, overovac=1;
@@ -7,10 +8,10 @@ int main() {
     printf("Zadajte pocet cisel na spracovanie:\n");
     do{
         scanf("%d", &n);
-        if(n<0 || n>100)
+        if(n<0 || n>MAX)
             printf("Musite zadat pouzitelnu velkost pola (0-100):\n");
     }
-    while(n<0 || n>100);
+    while(n<0 || n>MAX);
 
     int cisla[n];
 
@@ -49,4 +50,5 @@ int main() {
     printf("[OUTPUT]Priemer odchyliek cisiel v odchylkovom poli je: %.5f", priemer_odchyliek);
 
     return (0);
+    //MIT License, David Manca
 }
