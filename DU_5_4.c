@@ -20,7 +20,7 @@ int main() {
         scanf("%d", &cisla[i]);
 
         if(cisla[i]>=0) {
-            printf("OK\n\n");
+            printf("OK\n------\n");
             overovac++;
         } else {
             printf("NESPRAVNE ZADANE CISLO! Opakujte zadanie %d cisla:\n", overovac);
@@ -31,7 +31,7 @@ int main() {
     for (j = 0; j < i; j++)
         suma += cisla[j];
 
-    priemer_cislo = (double) suma / n;
+    priemer_cislo = (double)suma / n;
 
     for (j = 0; j < i; j++) {
         medzichecker = 0;
@@ -47,7 +47,7 @@ int main() {
     printf("[DEBUG] Aritmeticky priemer ciselneho pola je: %.5f\n", priemer_cislo);
     printf("[DEBUG] Suma cisel v ciselnom poli je: %d\n", suma);
     printf("[DEBUG] Suma cisel v odchylkovom poli je: %.5f\n\n", suma_odchyliek);
-    printf("[OUTPUT]Priemer odchyliek cisiel v odchylkovom poli je: %.5f", priemer_odchyliek);
+    printf("[OUTPUT] -> Priemer odchyliek cisiel v odchylkovom poli je: %.5f", priemer_odchyliek);
 
     return (0);
     //MIT License, David Manca
