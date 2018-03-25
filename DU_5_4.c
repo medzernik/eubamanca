@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAX 100
 
-int main() {
+int main(int argc, char* argv[]) {
     int n = -1, i = 0, j = 0, suma = 0, overovac=1;
     double priemer_cislo = 0, priemer_odchyliek, suma_odchyliek = 0, medzichecker = 0;
 
