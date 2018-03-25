@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
             printf("OK\n------\n");
             overovac++;
         } else {
-            printf("NESPRAVNE ZADANE CISLO! Opakujte zadanie %d cisla:\n", overovac);
+            printf("!------!\n!!NESPRAVNE ZADANE CISLO!! Opakujte zadanie %d cisla:\n", overovac);
             i--;
         }
     }
