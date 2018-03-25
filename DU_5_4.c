@@ -16,7 +16,7 @@ int main() {
     int cisla[n];
 
     for (i = 0; i < n; i++) {
-        printf("Zadajte %d cislo\n", overovac);
+        printf("Zadajte %d cislo\n->", overovac);
         scanf("%d", &cisla[i]);
 
         if(cisla[i]>=0) {
