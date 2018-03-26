@@ -2,7 +2,7 @@
 #define MAX 100
 
 int main(int argc, char* argv[]) {
-    int n, i = 0, j = 0, suma = 0, overovac=1;
+    int n, i = 0, j = 0, suma = 0, overovac=1, cisla[MAX];
     double priemer_cislo = 0, priemer_odchyliek, suma_odchyliek = 0, medzichecker = 0;
 
     printf("Zadajte pocet cisel na spracovanie:\n");
@@ -12,9 +12,7 @@ int main(int argc, char* argv[]) {
             printf("Musite zadat pouzitelnu velkost pola (1-100):\n");
     }
     while(n<1 || n>MAX);
-
-    int cisla[n];
-
+    
     for (i = 0; i < n; i++) {
         printf("Zadajte %d cislo:\n->", overovac);
         scanf("%d", &cisla[i]);
