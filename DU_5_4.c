@@ -2,7 +2,7 @@
 #define MAX 100
 
 int main(int argc, char* argv[]) {
-    int n = -1, i = 0, j = 0, suma = 0, overovac=1;
+    int n, i = 0, j = 0, suma = 0, overovac=1;
     double priemer_cislo = 0, priemer_odchyliek, suma_odchyliek = 0, medzichecker = 0;
 
     printf("Zadajte pocet cisel na spracovanie:\n");
@@ -16,14 +16,14 @@ int main(int argc, char* argv[]) {
     int cisla[n];
 
     for (i = 0; i < n; i++) {
-        printf("Zadajte %d cislo\n->", overovac);
+        printf("Zadajte %d cislo:\n->", overovac);
         scanf("%d", &cisla[i]);
 
         if(cisla[i]>0) {
             printf("OK\n------\n");
             overovac++;
         } else {
-            printf("!------!\n!!NESPRAVNE ZADANE CISLO!! Opakujte zadanie %d cisla:\n!------!\n", overovac);
+            printf("!------!\n!!NESPRAVNE ZADANE CISLO!! Opakujte zadanie %d cisla\n!------!\n\n", overovac);
             i--;
         }
     }
