@@ -27,7 +27,7 @@ void vypisMaticu_do_suboru(FILE *vystup, int rf, int  sf, int M[][MAX])
 
 //funkcia vynasobi matice AF * BF a ich sucin zapise do matice CF, cize vykona CF = AF * BF
 //i       j               j          k
-int nasobMatice(int CF[][MAX], int *rf, int  *sf, int AF[][MAX], int *rf2, int  *sf2, int BF[][MAX])
+double nasobMatice(int CF[][MAX], int rf, int  sf, int AF[][MAX], int rf2, int  sf2, int BF[][MAX])
 {
     int i, j, k;
     if (sf==rf2) {
