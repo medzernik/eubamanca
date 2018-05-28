@@ -48,5 +48,5 @@ int main(int argc, char* argv[]) {
     printf("[OUTPUT] -> Priemer odchyliek cisiel v odchylkovom poli je: %.5f", priemer_odchyliek);
 
     return (0);
-    //MIT License, David Manca
+    //Copyright David Manca, MIT License 2018
 }
