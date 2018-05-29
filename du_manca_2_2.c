@@ -13,4 +13,5 @@ int main(int argc, char* argv[]) {
 
     printf("%d", min);
     return 0;
+    //David Manca, M.I.T License 2018
 }
