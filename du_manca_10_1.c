@@ -94,7 +94,7 @@ struct TZlomok PodielZlomkov(struct TZlomok z1f, struct TZlomok z2f){
  }
 
 //________________________________________________________________________________
-int main()
+int main(int argc, char* argv[])
 {
 	struct TZlomok z1, z2, sucin_zlomkov, sucet_zlomkov, rozdiel_zlomkov, podiel_zlomkov;
 	struct TZlomok *pz1, *pz2, *p_sucin_zlomkov, *p_sucet_zlomkov, *p_rozdiel_zlomkov, *p_podiel_zlomkov;
