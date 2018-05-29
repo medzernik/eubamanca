@@ -1,8 +1,10 @@
 #include <stdio.h>
 #define MAX 20
 
-double *sumapointer;
 double suma=0;
+double *sumapointer=&suma;
+
+
 
 void NacitajMaticu(int r, int s, int A[MAX][MAX]){
     int i, j;
@@ -31,14 +33,12 @@ void TransponovanaMatica(int r, int s, int A[MAX][MAX], int TA[MAX][MAX]){
 }
 
 
-int SumaPrvkovMatice(int r, int s, int A[MAX][MAX]) {
+double SumaPrvkovMatice(int r, int s, int A[MAX][MAX]) {
     int i, j;
-
-
-    sumapointer=&suma;
     for (i = 0; i < r; i++) {
         for (j = 0; j < s; j++);
-            suma+=A[i][j];
+            suma = suma + A[i][j];
+            printf("[DEBUG] SUMA -> %f\n", suma);
     }
 
     return suma;
@@ -46,7 +46,8 @@ int SumaPrvkovMatice(int r, int s, int A[MAX][MAX]) {
 
 double PriemerPrvkovMatice(int r, int s, int A[MAX][MAX]){
     double priemer=0;
-    printf("\n\n\nhodnota v pointeru je: %f\n\n\n", *sumapointer);
+    printf("\n\n\n[DEBUG] -> hodnota v pointeru je: %f", *sumapointer);
+    printf("\n[DEBUG] -> hodnota pointeru je: %f\n\n\n", sumapointer);
     priemer = *sumapointer/(r*s);
     return priemer;
 
@@ -76,7 +77,7 @@ int main(int argc, char* argv[]) {
     //vypisanie matice A + suma + priemer
     printf("Matica A: \n");
     VypisMaticu(r_a, s_a, A);
-    printf("\nSuma tejto matice je:\n %d\n\n", SumaPrvkovMatice(r_a, s_a, A));
+    printf("\nSuma tejto matice je:\n %.5f\n\n", SumaPrvkovMatice(r_a, s_a, A));
     printf("\nPriemer tejto matice je:\n %.5f\n\n", PriemerPrvkovMatice(r_a, s_a, A));
 
     /*vypisanie matice B + suma + priemer
@@ -89,13 +90,13 @@ int main(int argc, char* argv[]) {
     TransponovanaMatica(r_a, s_a, A, TA);
     printf("\nTransponovana matica TA:\n");
     VypisMaticu(s_a, r_a, TA);
-    printf("\nSuma tejto matice je: %d", SumaPrvkovMatice(s_a, r_a, TA));
+    printf("\nSuma tejto matice je: %.5f", SumaPrvkovMatice(s_a, r_a, TA));
 
     /*transponovanie matice B + suma + priemer
     TransponovanaMatica(r_b, s_b, B, TB);
     printf("\nTransponovana matica TB:\n");
     VypisMaticu(s_b, r_b, TB);
-    printf("\nSuma tejto matice je: %d", SumaPrvkovMatice(s_b, r_b, TB));
+    printf("\nSuma tejto matice je: %.5f", SumaPrvkovMatice(s_b, r_b, TB));
     */
 
 return 0;
