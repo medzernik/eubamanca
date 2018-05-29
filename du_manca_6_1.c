@@ -95,4 +95,5 @@ int main(int argc, char* argv[]) {
     //*/
 
 return 0;
+    //David Manca, M.I.T License 2018
 }
