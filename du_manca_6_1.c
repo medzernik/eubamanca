@@ -57,7 +57,7 @@ int main() {
 
     TransponovanaMatica(a, b, A, TA);
     printf("Transponovana matica TA:\n");
-    VypisMaticu(a, b, TA);
+    VypisMaticu(b, a, TA);
 
 return 0;
 }
