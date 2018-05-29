@@ -16,4 +16,5 @@ int main(int argc, char* argv[]) {
 
     printf("NSD je: %d", nsd);
     return 0;
+    //David Manca, M.I.T License 2018
 }
