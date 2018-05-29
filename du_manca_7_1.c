@@ -77,4 +77,5 @@ int main() {
     printf("\nPriemer prvkov na hlavnej diagonale matice A je: %.2f\n", PriemerNaDiagonaleA(r, s, A));
     printf("\nPriemer prvkov na hlavnej diagonale matice B je: %.2f\n", PriemerNaDiagonaleB(r, s, B));
     return 0;
+    //David Manca, M.I.T License 2018
 }
